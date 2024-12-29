@@ -1,6 +1,7 @@
 import "./globals.css";
 import sansita from "./ui/font";
 import styles from "./layout.module.css";
+import clsx from "clsx";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,19 +9,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sansita.className}>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className={styles.contnav}>
-            <img className="ml-2 mt-2" src="logo.png" alt="image" />
-            <ul>
-              <li>
-                <a href="/">Home</a>
+      <body className={clsx(sansita.className, "background")}>
+        <nav className="container mx-auto">
+          <div className={clsx(styles.contnav, "flex justify-between mt-3")}>
+            <img src="logo.png" alt="image" />
+            <ul className="flex items-center">
+              <li className="mx-4">
+                <a className={styles.linkA} href="/">
+                  Home
+                </a>
               </li>
-              <li>
-                <a href="/about">Comprar</a>
+              <li className="mx-4">
+                <a className={styles.linkA} href="/comprar">
+                  Comprar
+                </a>
               </li>
-              <li>
-                <a href="/nosotros">Nostros</a>
+              <li className="ml-4">
+                <a className={styles.linkA} href="/nosotros">
+                  Nosotros
+                </a>
               </li>
             </ul>
           </div>

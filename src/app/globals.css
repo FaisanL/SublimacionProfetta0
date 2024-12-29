@@ -5,7 +5,27 @@
   --primary-color: #d29e15;
   --background-color: #faf0cd;
   --text-color: #203337;
+  --text-hover: #305d66;
 }
-body {
-  background-color: var(--background-color);
+.background {
+  background-image: linear-gradient(
+    to top,
+    #e1ce8c,
+    #e6d498,
+    #ebdaa4,
+    #efe1b1,
+    #f4e7bd,
+    #f6eac2,
+    #f8edc8,
+    #faf0cd,
+    #faf0cd,
+    #faf0cd,
+    #faf0cd,
+    #faf0cd
+  );
+  background-color: var(--background-color); /* Respaldo */
+  background-repeat: no-repeat; /* Evita que el gradiente se repita */
+  background-size: cover; /* Asegura que el gradiente ocupe todo el área */
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100%; /* Ocupa todo el ancho */
 }

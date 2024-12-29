@@ -1,7 +1,15 @@
 .contnav {
   height: 70px !important;
 }
-
 .contnav img {
   height: 70px !important;
+}
+
+.linkA {
+  font-size: 20px !important;
+  color: var(--text-color);
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.linkA:hover {
+  color: var(--text-hover);
 }
