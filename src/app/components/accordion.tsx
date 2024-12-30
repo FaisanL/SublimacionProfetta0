@@ -2,19 +2,46 @@
 import { Accordion, AccordionItem } from "@nextui-org/react";
 
 export default function AccordionComp() {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
   return (
     <Accordion variant="splitted">
-      <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-        {defaultContent}
+      <AccordionItem
+        key="1"
+        aria-label="Accordion 1"
+        title="???"
+        className="flex items-center justify-center flex-col"
+      >
+        <p className="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam est
+          dignissimos sed, odio asperiores in incidunt, repellat reiciendis
+          totam blanditiis at, veniam ullam voluptatum cupiditate aliquid
+          nostrum commodi pariatur enim.
+        </p>
       </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-        {defaultContent}
+      <AccordionItem
+        key="2"
+        aria-label="Accordion 2"
+        title="???"
+        className="flex items-center justify-center flex-col"
+      >
+        <p className="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam est
+          dignissimos sed, odio asperiores in incidunt, repellat reiciendis
+          totam blanditiis at, veniam ullam voluptatum cupiditate aliquid
+          nostrum commodi pariatur enim.
+        </p>
       </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-        {defaultContent}
+      <AccordionItem
+        key="3"
+        aria-label="Accordion 3"
+        title="???"
+        className="flex items-center justify-center flex-col"
+      >
+        <p className="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam est
+          dignissimos sed, odio asperiores in incidunt, repellat reiciendis
+          totam blanditiis at, veniam ullam voluptatum cupiditate aliquid
+          nostrum commodi pariatur enim.
+        </p>
       </AccordionItem>
     </Accordion>
   );

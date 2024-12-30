@@ -1,13 +1,14 @@
 import Image from "next/image";
 import styles from "./home.module.css";
 import AccordionComp from "../components/accordion";
+import clsx from "clsx";
 export default function Home() {
   return (
     <>
       <div className="container mx-auto">
         <div className="grid grid-cols-2">
           <div className="flex flex-col items-center justify-center w-3/4 text-center">
-            <p>
+            <p className="text-2xl">
               Lorem ipsum dolor sit amet consectetur. In pulvinar senectus quam
               sed congue id felis facilisi hac. Quam mi sed porttitor eget
               proin. Sed iaculis sed ipsum urna ante amet. Ornare pharetra ipsum
@@ -25,7 +26,7 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.secTrabajos}>
-            <div className="grid grid-cols-2 gap-2">
+            <div className={clsx(styles.box, "grid grid-cols-2 gap-2")}>
               <img src="ejemplo.png" alt="img" />
               <img src="ejemplo.png" alt="img" />
               <img src="ejemplo.png" alt="img" />
@@ -35,8 +36,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <br />
         <div className="flex justify-center items-center my-6 flex-col">
-          <h2 className="my-6">Preguntas Frecuentes</h2>
+          <h2 className="my-6 text-2xl">Preguntas Frecuentes</h2>
           <AccordionComp />
         </div>
       </div>

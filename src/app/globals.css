@@ -29,3 +29,6 @@
   min-height: 100vh; /* Ocupa toda la altura de la pantalla */
   width: 100%; /* Ocupa todo el ancho */
 }
+body {
+  color: var(--text-color);
+}
